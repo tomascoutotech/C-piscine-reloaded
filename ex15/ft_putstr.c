@@ -5,21 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomanuel <tomanuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/09 18:59:58 by tomanuel          #+#    #+#             */
-/*   Updated: 2026/09/10 12:36:09 by tomanuel         ###   ########.fr       */
+/*   Created: 2026/10/20 01:00:40 by tomanuel          #+#    #+#             */
+/*   Updated: 2026/10/20 01:00:40 by tomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
+	while (*str)
 	{
-		write(1, &str[i], 1);
-		i++;
+		ft_putchar(*str);
+		str++;
 	}
 }
